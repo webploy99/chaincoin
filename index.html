@@ -261,7 +261,7 @@
     <!-- popup1 -->
     <div class="popup1 w-full h-screen bg-[#0a0908]/65 hidden justify-center items-center fixed top-0 left-0 p-3" id="PopUp1">
         <div class="box max-w-[668px] w-full bg-white p-6 sm:px-8 rounded-lg relative">
-            <button class="absolute top-3 right-3 text-red-600 text-2xl"><ion-icon onclick="HidePopUp1()" name="close" class="border border-white shadow"></ion-icon></button>
+            <button class="absolute top-3 right-3 text-red-600 text-2xl"><ion-icon onclick="HidePopUp()" name="close" class="border border-white shadow"></ion-icon></button>
             <div class="text-lg text-gray-700 py-5 font-[500] flex gap-1">
                 <div><ion-icon name="arrow-redo" class="text-xl text-[#fcbf49] mt-1"></ion-icon></div>
                 <p>Only for cryptocurrency investors, because our discussion cryptocurrency group is a high -end investor  share group, investors who have not registered cryptocurrency wallets don't enter please</p>
@@ -280,7 +280,7 @@
     <!-- popup2 -->
     <div class="popup2 w-full h-screen bg-[#00000056] hidden justify-center items-center fixed top-0 left-0 p-3" id="PopUp2">
         <div class="box max-w-[668px] w-full bg-white p-6 sm:px-8 rounded-lg relative">
-            <button class="absolute top-3 right-3 text-red-600 text-2xl"><ion-icon onclick="HidePopUp2()" name="close" class="border border-white shadow"></ion-icon></button>
+            <button class="absolute top-3 right-3 text-red-600 text-2xl"><ion-icon onclick="HidePopUp()" name="close" class="border border-white shadow"></ion-icon></button>
             <div class="text-lg text-gray-700 py-5 font-[500] flex gap-1">
                 <div><ion-icon name="arrow-redo" class="text-xl text-[#fcbf49] mt-1"></ion-icon></div>
                 <p>After joining the discussion group, please take the initiative to contact the assistant for free cryptocurrency trading strategies and market updates</p>
@@ -319,6 +319,10 @@
         }
         function ShowPopUp2() {
             togglePopup(popup2, popup1);
+        }
+        function HidePopUp() {
+            popup1.style.display = "none";
+            popup2.style.display = "none";
         }
 
     </script>

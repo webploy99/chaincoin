@@ -30,9 +30,9 @@
 <body>
     <div class="header md:fixed md:top-0 relative w-full p-3 bg-[#fcbf49] shadow shadow-gray-500 z-50">
         <div class="logo max-w-7xl m-auto flex items-center justify-between">
-            <span class="rise px-3 text-4xl font-bold text-white tracking-wider">ChainCoin</span>
+            <span class="rise px-3 text-3xl sm:text-4xl font-bold text-white tracking-wider">ChainCoin</span>
             <div>
-                <button onclick="ShowPopUp1()" class="text-xl sm:text-2xl shadow-md hover:bg-slate-700 hover:text-white py-1.5 sm:py-2 px-3 sm:px-5 rounded-full bg-slate-100 font-bold text-gray-700 tracking-wide">Join Group Now</button>
+                <button onclick="ShowPopUp1()" class="text-xl sm:text-2xl shadow-md hover:bg-slate-700 hover:text-white py-1.5 sm:py-2 px-4 sm:px-6 rounded-full bg-slate-100 font-bold text-gray-700 tracking-wide">Join Group Now</button>
             </div>
         </div>
         
@@ -254,11 +254,10 @@
 
         <!-- button -->
         <div class="md:hidden fixed bottom-0 w-full bg-[#2f2f2f] border border-gray-700 py-5 p-5 text-gray-700">
-            <button onclick="url()" class="button-style bg-[#fcbf49] p-2 text-2xl font-bold w-full rounded hover:bg-green-700 hover:-translate-y-3 duration-300">Join Group</button>
+            <button onclick="ShowPopUp1()" class="button-style bg-[#fcbf49] p-2 text-2xl font-bold w-full rounded hover:bg-green-700 hover:-translate-y-3 duration-300">Join Group</button>
             <i class="text-[12px] tracking-wider font-semibold text-center block text-gray-400">Join our ChainCoin community now，Start your investment journey!!!</i>
         </div>
-    </div
-    >
+    </div>
     <!-- popup1 -->
     <div class="popup1 w-full h-screen bg-[#0a0908]/65 hidden justify-center items-center fixed top-0 left-0 p-3" id="PopUp1">
         <div class="box max-w-[668px] w-full bg-white py-10 px-5 sm:p-10 rounded-lg relative">
@@ -266,7 +265,7 @@
             <p class="text-lg text-gray-700 py-5 font-[500]">
                 Only for cryptocurrency investors, because our discussion cryptocurrency group is a high -end investor  share group, investors who have not registered cryptocurrency wallets don't enter please
             </p>
-            <div class="flex justify-between items-center tracking-wider text-lg text-white font-semibold *:text-center sm:gap-5 *:w-full *:text-md *:py-3 *:rounded-lg  *:cursor-pointe">
+            <div class="flex justify-between items-center tracking-wider text-lg text-white font-semibold *:text-center gap-5 *:w-full *:text-md *:py-2.5 *:rounded-lg  *:cursor-pointe">
                 <button onClick="ShowPopUp2()" class="bg-[#fcbf49]">
                     Yes
                 </button>
@@ -284,7 +283,7 @@
             <p class="text-lg text-gray-700 py-5 font-[500]">
                 After joining the discussion group, please take the initiative to contact the assistant for free cryptocurrency trading strategies and market updates
             </p>
-            <div class="flex justify-between items-center mt-3 tracking-wider text-white font-semibold *:text-center sm:gap-5 *:w-full *:text-md *:py-3 *:rounded-lg  *:cursor-pointer">
+            <div class="flex flex-col sm:flex-row justify-between items-center tracking-wider text-white font-semibold *:text-center gap-5 sm:gap-4 *:w-full text-lg *:py-2.5 *:rounded-lg  *:cursor-pointer">
                 <button onclick="url()" class="bg-[#fcbf49]">
                     Yes, I want to join the group
                 </button>

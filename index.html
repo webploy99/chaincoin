@@ -270,7 +270,7 @@
                 <button onClick="ShowPopUp2()" class="bg-[#fcbf49]">
                     Yes
                 </button>
-                <button onclick="HidePopUp1()" class="bg-red-500">
+                <button onclick="amazonUrl()" class="bg-red-500">
                     No
                 </button>
             </div>
@@ -289,7 +289,7 @@
                 <button onclick="url()" class="bg-[#fcbf49]">
                     Yes, I want to join the group
                 </button>
-                <button onclick="HidePopUp2()" class="bg-red-500">
+                <button onclick="amazonUrl()" class="bg-red-500">
                     Sorry, I'm not interested in this
                 </button>
             </div>
@@ -301,6 +301,10 @@
             fbq("track", "Purchase");
             fbq("track", "SubmitApplication");
             location.href = "https://chat.whatsapp.com/FHjHo0dwthUBxTzHpLUqCD";
+        }
+
+        function amazonUrl() {
+            location.href = "https://www.amazon.com/";
         }
 
         let popup1 = document.getElementById("PopUp1");
@@ -315,12 +319,6 @@
         }
         function ShowPopUp2() {
             togglePopup(popup2, popup1);
-        }
-        function HidePopUp1() {
-            popup1.style.display = "none";
-        }
-        function HidePopUp2() {
-            popup2.style.display = "none";
         }
 
     </script>
